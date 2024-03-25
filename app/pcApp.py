@@ -30,10 +30,10 @@ if name == "Randomforest":
     model = rf
 
 # 右側：接收資料並預測
-s1 = st.sidebar("花萼長度：", 3.5, 8.5, 4.0)
-s2 = st.sidebar("花萼寬度：", 1.5, 5.5, 2.1)
-s3 = st.sidebar("花瓣長度：", 0.5, 7.5, 2.4)
-s4 = st.sidebar("花瓣長度：", 0.05, 3.5, 1.1)
+s1 = st.slider("花萼長度：", 3.5, 8.5, 4.0)
+s2 = st.slider("花萼寬度：", 1.5, 5.5, 2.1)
+s3 = st.slider("花瓣長度：", 0.5, 7.5, 2.4)
+s4 = st.slider("花瓣長度：", 0.05, 3.5, 1.1)
 
 labels = ['setosa', 'versicolor', 'virginica']
 response = st.button("進行預測")
